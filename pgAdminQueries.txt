@@ -1,0 +1,27 @@
+-- ALTER TABLE stock
+-- DROP CONSTRAINT IF EXISTS fk_stock_product;
+
+-- ALTER TABLE stock
+-- ADD CONSTRAINT fk_stock_product
+-- FOREIGN KEY (prod_id)
+-- REFERENCES Product (prod_id)
+-- ON UPDATE CASCADE;
+
+-- ALTER TABLE stock
+-- DROP CONSTRAINT IF EXISTS fk_stock_depot;
+
+-- ALTER TABLE stock
+-- ADD CONSTRAINT fk_stock_depot
+-- FOREIGN KEY (dep_id)
+-- REFERENCES Depot (dep_id)
+-- ON UPDATE CASCADE;
+
+
+-- SELECT * FROM Product;
+-- INSERT INTO Product VALUES('p4', 'test', 3);
+-- SELECT * FROM Depot;
+-- INSERT INTO Depot VALUES('d5','test',3000);
+-- INSERT INTO Stock VALUES('p4', 'd5', 500);
+-- SELECT * FROM Stock;
+-- DELETE FROM Product WHERE prod_id = 'pp4';
+-- DELETE FROM Depot WHERE dep_id = 'dd5';
